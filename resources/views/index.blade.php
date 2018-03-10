@@ -38,14 +38,14 @@
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link smooth-link" href="#project">Project</a>
+				  </li>
+				  <li class="nav-item">
+			        <a class="nav-link smooth-link" href="#contact">Contack</a>
 			      </li>
 			    </ul>
-			    <form class="form-inline">
-				    <a href="#contact" class="btn smooth-link align-middle btn-primary">Contack	</a>
+				<form class="form-inline">
+				    <a href="" class="btn smooth-link align-middle btn-primary">register	</a>
 				</form>
-				<li class="nav-item">
-			        <a class="nav-link smooth-link" href="#project">Register</a>
-			      </li>
 			  </div>
 		  </div>
 		</nav>
