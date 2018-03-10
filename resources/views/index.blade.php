@@ -42,7 +42,10 @@
 			    </ul>
 			    <form class="form-inline">
 				    <a href="#contact" class="btn smooth-link align-middle btn-primary">Contack	</a>
-			    </form>
+				</form>
+				<li class="nav-item">
+			        <a class="nav-link smooth-link" href="#project">Register</a>
+			      </li>
 			  </div>
 		  </div>
 		</nav>
