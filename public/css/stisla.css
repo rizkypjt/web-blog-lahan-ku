@@ -219,21 +219,7 @@ html, body {
 .navbar.main-navbar .form-inline {
 	margin-left: 15px;
 }
-
-.navbar.main-navbar .form-inline .btn {
-	border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-ms-border-radius: 30px;
-	-o-border-radius: 30px;
-	border-width: 2px;
-	padding-left: 20px;
-	padding-right: 20px;
-	font-size: 14px;
-	letter-spacing: 1px;
-	background-color: transparent;
-	border-color: #fff;
-}
+/*  */
 
 .navbar.main-navbar .form-inline .btn:hover {
 	background-color: #fff;
