@@ -42,13 +42,25 @@
 				  <li class="nav-item">
 			        <a class="nav-link smooth-link" href="#contact">Contack</a>
 			      </li>
-			    </ul>
-				<form class="form-inline">
-				    <a href="/login" class="btn smooth-link align-middle btn-primary">Login</a>
-				</form>	
-				<form class="form-inline">
-				    <a href="/register" class="btn smooth-link align-middle btn-primary">Register</a>
-				</form>
+				</ul>
+				@guest
+					<form class="form-inline">
+						<a href="{{ route('login') }}" class="btn smooth-link align-middle btn-primary">Login</a>
+					</form>	
+					<form class="form-inline">
+						<a href="{{ route('register') }}" class="btn smooth-link align-middle btn-primary">Register</a>
+					</form>
+				@else
+				<a href="{{ route('logout') }}"
+				onclick="event.preventDefault();
+						document.getElementById('logout-form').submit();">
+				Logout
+			</a>
+
+			<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+				{{ csrf_field() }}
+			</form>
+				@endguest
 			  </div>
 		  </div>
 		</nav>
