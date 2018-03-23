@@ -8,7 +8,7 @@
 		<meta name="description" content="HTML5 and CSS3 Template Based on Bootstrap 4">
 		<title> Lahan-Ku </title>
 		<link rel="stylesheet" href="/ionicons/css/ionicons.min.css">
-		<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="/sweetalert/dist/sweetalert.css">
 		<link rel="stylesheet" href="/css/stisla.css">
 	</head>
@@ -51,11 +51,17 @@
 						<a href="{{ route('register') }}" class="btn smooth-link align-middle btn-primary">Register</a>
 					</form>
 				@else
-				<a href="{{ route('logout') }}"
+			<li class="dropdown">
+				<a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+					{{ Auth::user()->name }} <span class="caret"></span>
+				</a>
+		``<ul class="dropdown-menu">
+			<a class="dropdown-item" href="{{ route('logout') }}"
 				onclick="event.preventDefault();
 						document.getElementById('logout-form').submit();">
 				Logout
 			</a>
+		</ul>
 
 			<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
 				{{ csrf_field() }}
