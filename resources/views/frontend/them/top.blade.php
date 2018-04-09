@@ -143,10 +143,11 @@
 				<p class="section-lead text-muted">Mari Kita Bangun Ketahanan Pangan Indonesia</p>
 				<div class="section-body">
 					<div class="row col-spacing">
+						{{-- @foreach ($posts as $post) --}}
+						@foreach ($errors->all() as $error)
 						<div class="col-12 col-md-6 col-lg-4">
 							<article class="card">
-							  <img class="card-img-top" src="img/petani/teh.jpg" alt="Article Image">
-							  @foreach ($posts as $post) 
+							  <img class="card-img-top" src="img/petani/teh.jpg" alt="Article Image"> 
 							  <div class="card-body">
 								  <div class="card-subtitle mb-2 text-muted">by <a href="#">John Doe</a> on August 10, 2017</div>
 							    <h4 class="card-title"><a href="#" data-toggle="read" data-id="1">{{ $post->title }}</</a></h4>
@@ -155,10 +156,10 @@
 								    <a href="#" class="card-more" data-toggle="read" data-id="1">Read More <i class="ion-ios-arrow-right"></i></a>
 							    </div>
 							</div>
-							@endforeach
-
 						  </article>
 					  </div>
+					  
+					  @endforeach
 					  <div class="col-12 col-md-6 col-lg-4">
 							<article class="card">
 							  <img class="card-img-top" src="img/news/img04.jpg" alt="Article Image">

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\post;
 class PostController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      *

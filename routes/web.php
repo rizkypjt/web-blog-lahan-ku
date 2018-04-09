@@ -20,7 +20,7 @@ Route::get('/user', 'UserController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/', 'PostController@index');
+Route::get('/home', 'PostController@index');
 
 // Dasboard
 Route::get('/admin', 'DasboardController@index')->name('dasboard');
