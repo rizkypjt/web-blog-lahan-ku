@@ -11,19 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
 
+Route::get('/', 'PageController@home');
 
 Route::get('/user', 'UserController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home', 'PostController@index');
+// Route::get('/home', 'PostController@index');
 
 // Dasboard
 Route::get('/admin', 'DasboardController@index')->name('dasboard');
-
-
+// Route::get('/admin', 'PostController@create');
 

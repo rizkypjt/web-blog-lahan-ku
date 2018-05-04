@@ -1,6 +1,6 @@
-@extends('frontend.them.bottom')
+@include('frontend.them.bottom')
 	
 	@section('content')
 
-@extends('frontend.them.top')
+@include('frontend.them.top')
 

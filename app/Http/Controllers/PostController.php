@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\post;
 class PostController extends Controller
 {
+
+    protected $fillable = ['title','description'];
     
     /**
      * Display a listing of the resource.
@@ -26,7 +28,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('frontend.home');
     }
 
     /**
@@ -48,7 +50,7 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('frontend.home', compact('posts'));;
     }
 
     /**
